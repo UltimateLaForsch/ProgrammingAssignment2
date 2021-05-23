@@ -31,7 +31,9 @@ cacheSolve <- function(x, ...) {
 }
 
 # Example execution
-mat <- matrix(c(1, 2, 3, 0, 1, 4, 5, 6, 0),3,3)
+# mat <- matrix(c(1, 2, 3, 0, 1, 4, 5, 6, 0),3,3)
+mat <- matrix(c(1,3,2,1,2,1,1,1,2), 3, 3)
+print(mat)
 mcm <- makeCacheMatrix(mat)
 cs <- cacheSolve(mcm)
 print(cs)
